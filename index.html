@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Homework Solver</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Free AI Homework Solver - Type or scan your homework and get instant answers." />
+  <meta name="keywords" content="Homework Solver, AI Solver, Math Help, AI Homework, Scan Question AI" />
+
+  <!-- Google AdSense (replace client param with your ca-pub) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxx"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>📘 AI Homework Solver</h1>
+      <nav>
+        <a class="blog-btn" href="blog.html">📖 Blog</a>
+      </nav>
+    </header>
+
+    <p class="subtitle">Type your question or upload an image (image OCR powered by Tesseract.js)</p>
+
+    <!-- Top Ad -->
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-xxxxxxxx"
+           data-ad-slot="1234567890"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- Solver UI -->
+    <div class="solver">
+      <label for="question">Question</label>
+      <textarea id="question" placeholder="Type your homework question here..."></textarea>
+
+      <div class="file-row">
+        <input type="file" id="imageInput" accept="image/*" />
+        <button id="extractBtn">Extract Text</button>
+      </div>
+      <p id="extractedText" class="extracted"></p>
+
+      <div class="actions">
+        <button id="solveBtn">Solve Question</button>
+        <button id="clearBtn" class="muted">Clear</button>
+      </div>
+    </div>
+
+    <!-- Answer -->
+    <div id="answerBox" class="answer-box" hidden>
+      <h3>Answer</h3>
+      <pre id="answer" class="answer-pre"></pre>
+    </div>
+
+    <!-- Bottom Ad -->
+    <div class="ad-slot">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-xxxxxxxx"
+           data-ad-slot="9876543210"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <footer class="footer">
+      <small>Built with ❤️ • Replace AdSense & OpenAI keys before deploying.</small>
+    </footer>
+  </div>
+
+  <!-- Tesseract.js -->
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
